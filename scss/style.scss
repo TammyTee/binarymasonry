@@ -65,7 +65,7 @@ canvas {
   display: table;
   width: 100%;
   vertical-align: bottom;
-  margin: 5rem 0 5rem;
+  margin: 5rem 0 2rem;
   text-align: center;
   background: $c1;
   color: $c2;
@@ -74,5 +74,15 @@ canvas {
     color: darken($c2, 20%);
     text-decoration: none;
     border-bottom: 1px solid darken($c2, 20%);
+  }
+}
+
+.footer {
+  display: flex;
+  margin-bottom: 2rem;
+  & img {
+    display: block;
+    margin: auto;
+    height: 1rem;
   }
 }

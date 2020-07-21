@@ -48,7 +48,7 @@ canvas {
   display: table;
   width: 100%;
   vertical-align: bottom;
-  margin: 5rem 0 5rem;
+  margin: 5rem 0 2rem;
   text-align: center;
   background: #0E2A47;
   color: #ffffff;
@@ -57,5 +57,13 @@ canvas {
     color: #cccccc;
     text-decoration: none;
     border-bottom: 1px solid #cccccc; }
+
+.footer {
+  display: flex;
+  margin-bottom: 2rem; }
+  .footer img {
+    display: block;
+    margin: auto;
+    height: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
