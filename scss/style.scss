@@ -1,13 +1,20 @@
 $c1: #0E2A47;
 $c2: #ffffff;
+$darkblue: darken($c1, 5%);
+$darkgrey: #1E1E1E;
+$greyish: #F2F2F2;
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-html,
-body {
+
+html {
   margin: 0;
+}
+
+body {
   background: $c1;
 }
 
@@ -77,9 +84,38 @@ canvas {
   }
 }
 
+section {
+  height: 100vh;
+  background: $greyish;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.section-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 92px;
+  width: 100%;
+  max-width: 1680px;
+}
+
+.use-cases {
+  // background: darken($c1, 8%);
+  background: $darkgrey;
+  color: white;
+}
+
+.capability {
+  background: $greyish;
+}
+
+.cta {
+  background: white;
+}
+
 .footer {
+  background: $c1;
   display: flex;
-  margin-bottom: 2rem;
   & img {
     display: block;
     margin: auto;
