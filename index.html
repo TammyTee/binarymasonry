@@ -5,30 +5,121 @@
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.ico" />
     <title>Flyover Technologies</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
-    <div class="hero">
-      <div class="hero_text">
-        <span class="hero_inner">become <span class="hero_emphasis">the</span> future</span>
+    <section class="hero">
+      <video autoplay muted loop width=100% id="ft_welcome">
+        <source src="assets/ft_welcome.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="video_overlay">
+        <img src="assets/logo.png" style="width:100%"/>
+
+        <div class="row">
+          <div class="col">
+            <span id="tagline" class="text-center">
+              Building the future of sustainability.
+            </span>
+          </div>
+        </div>
+
+        <div class="row scroll-container text-center">
+          <a href="#about">
+            <img class="scroll-icon" src="assets/arrow.png" alt="scroll-down"/>
+          </a>
+        </div>
       </div>
+    </section>
 
 
-    </div>
-    <div id="particles"></div>
-    <div class="about">
-      We design, build and host software to take your business to the next generation &mdash; <a href="mailto:sales@flyovertechnologies.com?subject=Consultation">schedule a consultation</a>
-    </div>
+    <section id="about" class="about">
+      <div class="section-container text-center">
+        <h3 class="section-header" style="margin-bottom:80px">
+          Our advanced AI delivers results in realtime for a diverse set of challenges.
+        </h3>
+        <video autoplay muted loop width=70% id="demo-video">
+          <source src="assets/no_boxes.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
 
-    <div class="footer">
-      <img src="logo.png" alt="logo"/>
-    </div>
 
-    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-    <script  src="js/index.js"></script>
+    <section id="use-cases" class="use-cases">
+      <div class="section-container">
+        <div class="row block text-center">
+          <h3 class="section-header">Big Data Processing</h3>
+
+          <img src="assets/field.png" alt="field"/>
+        </div>
+
+
+        <div class="row row-reverse">
+          <div class="col vert-center">
+            <h3 class="section-header">Computer Vision and AI</h3>
+          </div>
+
+          <div class="col">
+            <img src="assets/boundaries-md.png" alt="boundaries"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col vert-center">
+            <h3 class="section-header">Crop Analysis</h3>
+          </div>
+
+          <div class="col">
+            <img src="assets/variance-md.png" alt="variance"/>
+          </div>
+        </div>
+
+        <div class="row row-reverse">
+          <div class="col vert-center">
+            <h3 class="section-header">Automatic Object Detection</h3>
+          </div>
+
+          <div class="col">
+            <img src="assets/solar-md.png" alt="solar"/>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="capability">
+      <div class="section-container text-center">
+        <h3 class="section-header text-white">
+          AI systems deployed as a highly-scalable, fault-tolerant architecture in the cloud
+          for handling infinitely-large datasets.
+        </h3>
+
+
+        <img id="training-svg" src="assets/training.svg" alt="training"/>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div id="contact-us" class="section-container">
+        <div class="row">
+          <div class="col vert-center">
+            <h3 class="section-header text-center">
+              <a href="mailto:info@flyovertechnologies.com?subject=Consultation">Let's work together</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <!-- <img src="logo.png" alt="logo"/> -->
+      <div class="section-container">
+        Copyright &copy; 2020 Flyover Technologies, LLC. All rights reserved.
+      </div>
+    </section>
   </body>
 </html>
