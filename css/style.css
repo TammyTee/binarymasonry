@@ -53,6 +53,7 @@ section {
   min-height: 80vh;
   background: #F2F2F2;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .text-white {
