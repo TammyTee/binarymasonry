@@ -103,7 +103,7 @@ section {
 }
 
 .use-cases {
-  background: #F2F2F2;
+  background: white;
 }
 
 .capability {
@@ -116,8 +116,8 @@ section {
 }
 
 .cta {
-  background: white;
   display: flex;
+  background: #F2F2F2;
   min-height: 20vh;
 }
 .cta .section-container {

@@ -110,7 +110,7 @@ section {
 }
 
 .use-cases {
-  background: $greyish;
+  background: white;
 }
 
 .capability {
@@ -123,8 +123,8 @@ section {
 }
 
 .cta {
-  background: white;
   display: flex;
+  background: $greyish;
   min-height: 20vh;
 
   .section-container {
