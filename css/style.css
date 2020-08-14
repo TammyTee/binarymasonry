@@ -67,6 +67,9 @@ section {
   width: 100%;
   max-width: 1680px;
 }
+.section-container img {
+  max-width: 70vw;
+}
 
 .section-header {
   font-size: 2rem;
