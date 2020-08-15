@@ -1,149 +1,126 @@
-$c1: #0E2A47;
-$c2: #ffffff;
-$darkblue: darken($c1, 5%);
-$darkgrey: #1E1E1E;
-$greyish: #F2F2F2;
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,700&Rubik:400,700);
+@import './variables/index';
+@import './base';
+@import './components/index';
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+// #tagline {
+//   color: white;
+//   display: block;
+//   margin-top: 8vh;
+//   font-size: 3rem;
+//   font-weight: bold;
+// }
 
-html {
-  margin: 0;
-  scroll-behavior: smooth;
-}
+// .text-center {
+//   text-align: center;
+// }
 
-body {
-  background: $c1;
-  margin: 0;
-}
+// #demo-video {
+//   border-radius: 10px;
+// }
 
-#tagline {
-  color: white;
-  display: block;
-  margin-top: 8vh;
-  font-size: 3rem;
-  font-weight: bold;
-}
+// .video_overlay {
+//   display: block;
+//   margin: 0 auto;
+//   width:70%;
+//   z-index:300000;
+//   top:30%;
+//   position:absolute;
+//   left: 0; right: 0;
+// }
 
-.text-center {
-  text-align: center;
-}
+// .scroll-icon {
+//   height: 10vh;
+//   opacity: 0.5;
+// }
 
-#demo-video {
-  border-radius: 10px;
-}
+// .scroll-container {
+//   margin-top: 10vh;
+// }
 
-.video_overlay {
-  display: block;
-  margin: 0 auto;
-  width:70%;
-  z-index:300000;
-  top:30%;
-  position:absolute;
-  left: 0; right: 0;
-}
-
-img {
-  border-radius: 4px;
-}
-
-.scroll-icon {
-  height: 10vh;
-  opacity: 0.5;
-}
-
-.scroll-container {
-  margin-top: 10vh;
-}
-
-section {
-  min-height: 80vh;
-  background: $greyish;
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-}
+// section {
+//   min-height: 80vh;
+//   background: $greyish;
+//   overflow-x: hidden;
+// }
 
 .text-white {
   color: white !important;
 }
 
-.section-container {
-  padding-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 1680px;
+// .section-container {
+//   padding-top: 100px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 100%;
+//   max-width: 1680px;
 
-  img {
-    max-width: 70vw;
-  }
-}
+//   img {
+//     max-width: 70vw;
+//   }
+// }
 
-.section-header {
-  font-size: 2rem;
-  margin-top: 0;
-  color: #565656;
-}
+// .section-header {
+//   font-size: 2rem;
+//   margin-top: 0;
+//   color: #565656;
+// }
 
-.vert-center {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
+// .vert-center {
+//   display: flex;
+//   align-items: center;
+//   flex-direction: row;
+// }
 
-.block {
-  display: block !important;
-}
+// .block {
+//   display: block !important;
+// }
 
-.row-reverse {
-  flex-direction: row-reverse;
-}
+// .row-reverse {
+//   flex-direction: row-reverse;
+// }
 
-.row {
-  display: flex;
-  justify-content: space-evenly;
-}
+// .row {
+//   display: flex;
+//   justify-content: space-evenly;
+// }
 
-.hero {
-  background: darken($greyish, 15%);
-  margin-bottom: -10px;
-}
+// .about {
+//   background: white;
 
-.about {
-  background: white;
+// }
 
-}
+// .use-cases {
+//   background: white;
+// }
 
-.use-cases {
-  background: white;
-}
+// .capability {
+//   background: $blueZodiac;
+//   color: white;
+// }
 
-.capability {
-  background: $c1;
-  color: white;
-}
+// #training-svg {
+//   margin-top: -10%;
+// }
 
-#training-svg {
-  margin-top: -10%;
-}
+// .cta {
+//   display: flex;
+//   background: $greyish;
+//   min-height: 20vh;
 
-.cta {
-  display: flex;
-  background: $greyish;
-  min-height: 20vh;
+//   .section-container {
+//     align-self: center;
+//     padding-top: 0px;
+//   }
 
-  .section-container {
-    align-self: center;
-    padding-top: 0px;
-  }
+//   .section-header {
+//     margin: 0;
+//   }
 
-  .section-header {
-    margin: 0;
-  }
-
-}
+// }
 
 .footer {
-  background: $c1;
+  background: $blueZodiac;
   min-height: 48px;
   color: white;
   display: flex;
@@ -157,13 +134,13 @@ section {
 }
 
 // smaller screens
-@media (min-width: 768px) and (max-width: 1400px) {
+// @media (min-width: 768px) and (max-width: 1400px) {
 
-  #tagline {
-    font-size: 2.2rem;
-  }
+//   #tagline {
+//     font-size: 2.2rem;
+//   }
 
-  .section-header {
-    font-size: 1.5rem;
-  }
-}
+//   .section-header {
+//     font-size: 1.5rem;
+//   }
+// }

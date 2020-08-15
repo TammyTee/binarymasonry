@@ -10,13 +10,26 @@
 
   <body>
 
-    <section id="hero" class="hero">
-      <video autoplay muted loop width=100% id="ft_welcome">
-        <source src="assets/ft_welcome.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <section class="hero" id="hero">
+      <div class="hero__background">
+        <video class="hero__media" autoplay muted loop playsinline>
+          <source src="assets/ft_welcome.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-      <div class="video_overlay">
+      <div class="hero__foreground">
+        <div class="hero__content">
+          <h1 class="hero__heading">Flyover Technologies</h1>
+          <h1 class="hero__tagline">Building the future of sustainability.</h1>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about">
+        <img class="hero__scroll__icon" src="assets/arrow.png" alt="scroll-down"/>
+      </a>
+
+      <!-- <div class="video_overlay">
         <img src="assets/logo.png" style="width:100%"/>
 
         <div class="row">
@@ -32,22 +45,56 @@
             <img class="scroll-icon" src="assets/arrow.png" alt="scroll-down"/>
           </a>
         </div>
-      </div>
+      </div> -->
     </section>
 
 
-    <section id="about" class="about">
-      <div class="section-container text-center">
-        <h3 class="section-header" style="margin-bottom:80px">
+    <section class="banner-video-highlight" id="about">
+      <div class="banner-video-highlight__container container">
+        <h3 class="banner-video-highlight__heading">
           Our advanced AI delivers results in real-time for a diverse set of challenges.
         </h3>
-        <video autoplay muted loop width=70% id="demo-video">
-          <source src="assets/boxes.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+
+        <div class="banner-video-highlight__video-section">
+          <video class="banner-video-highlight__video" autoplay muted loop playsinline>
+            <source src="assets/boxes.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </section>
 
+    <section class="banner-image-split">
+      <div class="banner-image-split__container container">
+        <div class="banner-image-split__section">
+          <div class="banner-image-split__image-wrap">
+            <img class="banner-image-split__image" src="assets/field.png" alt="field">
+          </div>
+        </div>
+
+        <div class="banner-image-split__section">
+          <div class="banner-image-split__content">
+            <h3>Big Data Processing</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-image-split is-reversed">
+      <div class="banner-image-split__container container">
+        <div class="banner-image-split__section">
+          <div class="banner-image-split__image-wrap">
+            <img class="banner-image-split__image" src="assets/boundaries-md.png" alt="boundaries">
+          </div>
+        </div>
+
+        <div class="banner-image-split__section">
+          <div class="banner-image-split__content">
+            <h3>Computer Vision and AI</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="capability">
       <div class="section-container text-center">
@@ -60,49 +107,58 @@
       </div>
     </section>
 
-    <section id="use-cases" class="use-cases">
-      <div class="section-container">
-        <div class="row block text-center">
-          <h3 class="section-header">Big Data Processing</h3>
-
-          <img src="assets/field.png" alt="field"/>
-        </div>
-
-
-        <div class="row row-reverse">
-          <div class="col vert-center">
-            <h3 class="section-header">Computer Vision and AI</h3>
-          </div>
-
-          <div class="col">
-            <img src="assets/boundaries-md.png" alt="boundaries"/>
+    <section class="banner-image-split">
+      <div class="banner-image-split__container container">
+        <div class="banner-image-split__section">
+          <div class="banner-image-split__image-wrap">
+            <img class="banner-image-split__image" src="assets/variance-md.png" alt="variance">
           </div>
         </div>
 
-        <div class="row">
-          <div class="col vert-center">
-            <h3 class="section-header">Crop Analysis</h3>
+        <div class="banner-image-split__section">
+          <div class="banner-image-split__content">
+            <h3>Crop Analysis</h3>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col">
-            <img src="assets/variance-md.png" alt="variance"/>
+    <section class="banner-image-split is-reversed">
+      <div class="banner-image-split__container container">
+        <div class="banner-image-split__section">
+          <div class="banner-image-split__image-wrap">
+            <img class="banner-image-split__image" src="assets/solar-md.png" alt="solar">
           </div>
         </div>
 
-        <div class="row row-reverse">
-          <div class="col vert-center">
-            <h3 class="section-header">Automatic Object Detection</h3>
-          </div>
-
-          <div class="col">
-            <img src="assets/solar-md.png" alt="solar"/>
+        <div class="banner-image-split__section">
+          <div class="banner-image-split__content">
+            <h3>Automatic Object Detection</h3>
           </div>
         </div>
-
       </div>
     </section>
 
     <section class="cta">
+      <form action="https://formspree.io/xrgydrqa" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company">
+
+        <label for="email">Email</label>
+        <input type="text" name="_replyto" id="email">
+
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone">
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      
       <div id="contact-us" class="section-container">
         <div class="row">
           <div class="col vert-center">

@@ -1,0 +1,73 @@
+.banner-video-highlight {
+  padding-top: 100px;
+  position: relative;
+
+  &__heading {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__video-section {
+    padding-bottom: 75px;
+    position: relative;
+
+    &::after {
+      background-color: $greyish;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 80%;
+      left: 0;
+      margin-left: -25px;
+      pointer-events: none;
+      position: absolute;
+      width: 100vw;
+      z-index: 0;
+    }
+  }
+
+  &__video {
+    box-shadow: 5px 5px 20px 0 rgba($black, 0.15);
+    height: auto;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__heading {
+      margin-bottom: 50px;
+    }
+
+    &__video-section {
+      padding-bottom: 120px;
+
+      &::after {
+        margin-left: -50px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: 150px;
+
+    &__video-section {
+      &::after {
+        margin-left: -75px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__video-section {
+      &::after {
+        margin-left: calc((75px + ((100vw - 1440px) / 2)) * -1);
+      }
+    }
+  }
+}

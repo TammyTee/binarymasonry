@@ -1,0 +1,67 @@
+.banner-image-split {
+  &__container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+  &__section {
+    flex: 0 0 auto;
+    width: 100%
+  }
+
+  &__image-wrap {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__image {
+    height: auto;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+  }
+
+  &__content {
+    padding: 30px 25px 45px;
+  }
+
+  &.is-reversed {
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 75px;
+    padding-top: 50px;
+
+    &__image-wrap {
+      height: 400px;
+    }
+
+    &__content {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      padding: 50px 50px 70px;
+    }
+
+    &__section {
+      width: 50%;
+    }
+
+    &__container {
+      .is-reversed & {
+        flex-flow: row-reverse wrap;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+   
+  }
+}
