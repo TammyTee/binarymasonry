@@ -1,5 +1,5 @@
 @mixin button($border: null, $border-radius: 1px, $family: 'base', 
-$font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.9rem, $transform: 'uppercase') {
+$font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.8rem, $transform: 'uppercase') {
   border-radius: #{$border-radius};
   font-size: #{$font-size};
   font-weight: 600;
@@ -24,6 +24,7 @@ $font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.9rem, $tr
 
 .button {
   @include button;
+  background-color: transparent;
   border: 1px solid;
   cursor: pointer;
   display: inline-block;
@@ -31,7 +32,7 @@ $font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.9rem, $tr
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: 0.5s ease-in-out;
+  transition: 0.333s ease-in-out;
   vertical-align: middle;
 
 
@@ -40,7 +41,9 @@ $font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.9rem, $tr
     color: $white;
 
     &:hover {
-      border-color: rgba($white, 1);
+      background-color: rgba($white, 0.4);
+      border-color: rgba($white, 0);
+      // color: $dark-blue;
     }
   }
 }
