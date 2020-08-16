@@ -1,6 +1,7 @@
 .hero {
   background: darken($greyish, 15%);
   height: 100vh;
+  min-height: 700px;
   position: relative;
   z-index: 1;
 
@@ -18,13 +19,13 @@
 
   &__media {
     display: block;
-    height: auto;
+    height: 100%;
     left: 50%;
-    min-width: 100%;
+    object-fit: cover;
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: auto;
+    width: 100%;
     z-index: 1;
   }
 
@@ -32,16 +33,17 @@
     align-items: center;
     display: flex;
     height: 100%;
-    justify-content: center;
+    // padding-bottom: 275px;
+    // padding-top: 200px;
     position: relative;
     z-index: 2;
   }
 
   &__scroll {
     bottom: 0;
-    height: 100px;
+    height: 75px;
     left: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     position: absolute;
     transform: translateX(-50%);
     width: 100%;
@@ -65,20 +67,93 @@
 
   &__content {
     color: $white;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
+    margin-top: -100px;
+    max-width: 280px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // text-align: center;
     width: 100%;
   }
 
+  &__icon {
+    margin-bottom: 10px;
+    width: 40px;
+  }
+
   &__heading {
-    font-family: $font-rubik;
-    text-transform: uppercase;
+    // font-family: $font-rubik;
+    // text-transform: uppercase;
+    // color: #073d5e;
+    // font-size: 38px;
+    // letter-spacing: -1.46px;
+    // line-height: 1.15;
   }
 
   &__tagline {
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-family: $font-roboto;
+    // font-size: 30px;
+    font-weight: 400;
+    // font-style: italic;
+    // font-weight: bold;
+    letter-spacing: 0.25px;
+    // line-height: 1.15;
+    margin-top: 10px;
+    text-transform: none;
+  }
+
+  @media screen and (min-width: 560px) {
+    &__content {
+      max-width: 70%;
+    }
+
+    &__heading {
+      // font-size: 55px;
+    }
+
+    &__tagline {
+      // font-size: 40px;
+    }
+
+    &__icon {
+      width: 50px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__content {
+      max-width: 60%;
+    }
+
+    &__icon {
+      width: 50px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    &__heading {
+      font-size: 90px;
+    }
+
+    &__tagline {
+      // font-size: 55px;
+      margin-top: 30px;
+    }
+
+    &__icon {
+      width: 78px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {  
+    &__content {
+      max-width: none;
+      text-align: center;
+    }
+
+    &__icon {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: baseline;
+    }
   }
 }

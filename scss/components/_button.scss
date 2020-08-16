@@ -1,0 +1,52 @@
+@mixin button($border: null, $border-radius: 1px, $family: 'base', 
+$font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.9rem, $transform: 'uppercase') {
+  // @include font-face($family: $family, $weight: 'bold');
+  // @include responsive-type($font-size);
+  border-radius: #{$border-radius};
+  font-size: #{$font-size};
+  font-weight: 600;
+  letter-spacing: #{$letter-spacing};
+  line-height: #{$line-height};
+  padding-bottom: #{$spacing * 1.25};
+  padding-left: #{$spacing};
+  padding-right: #{$spacing};
+  padding-top: #{$spacing * 1.25};
+  text-transform: #{$transform};
+  transition: background-color 0.333s ease-in-out;
+}
+
+// change button background color on hover
+@mixin button-hover($background, $text: 'white') {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($background, 6%);
+    color: $text;
+  }
+}
+
+.button {
+  @include button;
+  // @include button-hover($background: color('button', 'primary'));
+  // background-color: color('button', 'primary');
+  // color: color('base', 'white');
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 100px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  vertical-align: middle;
+
+
+  &--white {
+    border-color: rgba($white, 0.75);
+    color: $white;
+
+    &:hover {
+      border-color: rgba($white, 1);
+    }
+  }
+}

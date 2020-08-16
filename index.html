@@ -18,42 +18,31 @@
         </video>
       </div>
 
-      <div class="hero__foreground">
+      <div class="hero__foreground container">
         <div class="hero__content">
-          <h1 class="hero__heading">Flyover Technologies</h1>
-          <h1 class="hero__tagline">Building the future of sustainability.</h1>
+          <h1 class="hero__heading heading heading--1">
+            <img class="hero__icon" src="assets/leaf.png" alt="Flyover Technologies">
+            <strong>Flyover</strong> Technologies
+          </h1>
+          <h2 class="hero__tagline heading heading--2">Building the future of sustainability.</h2>
         </div>
       </div>
 
       <a class="hero__scroll" href="#about">
         <img class="hero__scroll__icon" src="assets/arrow.png" alt="scroll-down"/>
       </a>
-
-      <!-- <div class="video_overlay">
-        <img src="assets/logo.png" style="width:100%"/>
-
-        <div class="row">
-          <div class="col">
-            <span id="tagline" class="text-center">
-              Building the future of sustainability.
-            </span>
-          </div>
-        </div>
-
-        <div class="row scroll-container text-center">
-          <a href="#about">
-            <img class="scroll-icon" src="assets/arrow.png" alt="scroll-down"/>
-          </a>
-        </div>
-      </div> -->
     </section>
 
 
     <section class="banner-video-highlight" id="about">
       <div class="banner-video-highlight__container container">
-        <h3 class="banner-video-highlight__heading">
-          Our advanced AI delivers results in real-time for a diverse set of challenges.
-        </h3>
+        <div class="content">
+          <p class="content__eyebrow eyebrow">We Deliver</p>
+          <h3 class="content__heading heading heading--3">Real-Time Results</h3>
+          <p class="content__text">
+            Our advanced AI delivers results in real-time for a diverse set of challenges.
+          </p>
+        </div>
 
         <div class="banner-video-highlight__video-section">
           <video class="banner-video-highlight__video" autoplay muted loop playsinline>
@@ -64,101 +53,96 @@
       </div>
     </section>
 
-    <section class="banner-image-split">
-      <div class="banner-image-split__container container">
-        <div class="banner-image-split__section">
-          <div class="banner-image-split__image-wrap">
-            <img class="banner-image-split__image" src="assets/field.png" alt="field">
+    <section class="use-cases">
+      <div class="use-cases__container container">
+        <div class="content">
+          <p class="content__eyebrow eyebrow">Our AI</p>
+          <h3 class="content__heading heading heading--3">Use Cases</h3>
+        </div>
+
+        <div class="use-case">
+          <div class="use-case__content">
+            <div class="use-case__image-container"><img class="use-case__image" src="assets/field-cropped.png" alt="field"></div>
+            <p class="use-case__text heading heading--4">Big Data Processing</p>
           </div>
         </div>
 
-        <div class="banner-image-split__section">
-          <div class="banner-image-split__content">
-            <h3>Big Data Processing</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="banner-image-split is-reversed">
-      <div class="banner-image-split__container container">
-        <div class="banner-image-split__section">
-          <div class="banner-image-split__image-wrap">
-            <img class="banner-image-split__image" src="assets/boundaries-md.png" alt="boundaries">
+        <div class="use-case is-reversed">
+          <div class="use-case__content">
+            <div class="use-case__image-container"><img class="use-case__image" src="assets/boundaries-md.png" alt="boundaries"></div>
+            <p class="use-case__text heading heading--4">Computer Vision and AI</p>
           </div>
         </div>
 
-        <div class="banner-image-split__section">
-          <div class="banner-image-split__content">
-            <h3>Computer Vision and AI</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="capability">
-      <div class="section-container text-center">
-        <h3 class="section-header text-white">
-          Deployed as a highly-scalable, fault-tolerant architecture in the cloud for handling infinitely-large datasets.
-        </h3>
-
-
-        <img id="training-svg" src="assets/training.svg" alt="training"/>
-      </div>
-    </section>
-
-    <section class="banner-image-split">
-      <div class="banner-image-split__container container">
-        <div class="banner-image-split__section">
-          <div class="banner-image-split__image-wrap">
-            <img class="banner-image-split__image" src="assets/variance-md.png" alt="variance">
+        <div class="use-case">
+          <div class="use-case__content">
+            <div class="use-case__image-container"><img class="use-case__image" src="assets/variance-md.png" alt="variance"></div>
+            <p class="use-case__text heading heading--4">Crop Analysis</p>
           </div>
         </div>
 
-        <div class="banner-image-split__section">
-          <div class="banner-image-split__content">
-            <h3>Crop Analysis</h3>
+        <div class="use-case is-reversed">
+          <div class="use-case__content">
+            <div class="use-case__image-container"><img class="use-case__image" src="assets/solar-md.png" alt="solar"></div>
+            <p class="use-case__text heading heading--4">Automatic Object Detection</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="banner-image-split is-reversed">
-      <div class="banner-image-split__container container">
-        <div class="banner-image-split__section">
-          <div class="banner-image-split__image-wrap">
-            <img class="banner-image-split__image" src="assets/solar-md.png" alt="solar">
-          </div>
+    <section class="capability bg-greyish">
+      <div class="container text-center">
+        <div class="content">
+          <p class="content__eyebrow eyebrow">Scalable</p>
+          <h3 class="content__heading heading heading--3">Autonomous Learning</h3>
+          <p class="content__text">Deployed As a Highly-Scalable, Fault-Tolerant Architecture in the Cloud for Handling Infinitely Large Datasets.</p>
         </div>
 
-        <div class="banner-image-split__section">
-          <div class="banner-image-split__content">
-            <h3>Automatic Object Detection</h3>
-          </div>
-        </div>
+        <picture>
+          <source srcset="assets/training-dark.svg" media="(min-width: 768px)">
+          <img src="assets/training-sm.svg" alt="training"/>
+        </picture>
       </div>
     </section>
 
-    <section class="cta">
-      <form action="https://formspree.io/xrgydrqa" method="POST">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
+    <section class="banner-cta">
+      <div class="container text-center">
+        <div class="content margin-bottom-50">
+          <p class="content__eyebrow eyebrow color-white">Contact Us</p>
+          <h3 class="content__heading heading heading--3 color-white">Let's Work Together</h3>
+        </div>
+        
+        <form class="form" action="https://formspree.io/xrgydrqa" method="POST">
+          <div class="form-group">
+            <label class="flex-col-sm-12 flex-col-md-6">
+              <input class="form__input" type="text" name="name" placeholder="Name">
+            </label>
 
-        <label for="company">Company</label>
-        <input type="text" name="company" id="company">
+            <label class="flex-col-sm-12 flex-col-md-6">
+              <input class="form__input" type="text" name="company" placeholder="Company">
+            </label>
+          </div>
+  
+          <div class="form-group">
+            <label class="flex-col-sm-12 flex-col-md-6">
+              <input class="form__input" type="text" name="_replyto" placeholder="Email">
+            </label>
 
-        <label for="email">Email</label>
-        <input type="text" name="_replyto" id="email">
-
-        <label for="phone">Phone</label>
-        <input type="text" name="phone" id="phone">
-
-        <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-      
+            <label class="flex-col-sm-12 flex-col-md-6">
+              <input class="form__input" type="text" name="phone" placeholder="Phone">
+            </label>
+          </div>
+  
+          <div class="form-group">
+            <label class="flex-col-sm-12">
+              <textarea class="form__textarea" name="message" id="message" placeholder="Message"></textarea>
+            </label>
+          </div>
+  
+          <button class="form__submit button button--white" type="submit">Send Message</button>
+        </form>
+      </div>
+<!-- 
       <div id="contact-us" class="section-container">
         <div class="row">
           <div class="col vert-center">
@@ -167,12 +151,12 @@
             </h3>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="footer">
       <!-- <img src="logo.png" alt="logo"/> -->
-      <div class="section-container">
+      <div class="container">
         Copyright &copy; 2020 Flyover Technologies, LLC. All rights reserved.
       </div>
     </section>

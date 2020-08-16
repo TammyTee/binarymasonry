@@ -3,35 +3,44 @@
   position: relative;
 
   &__heading {
-    margin-bottom: 35px;
-    text-align: center;
+    // font-size: 23px;
+    // font-weight: 700;
+    // letter-spacing: 0.25px;
+    // line-height: 1.15;
+    margin-bottom: 15px;
+    // text-transform: uppercase;
   }
 
   &__container {
     position: relative;
+    text-align: center;
     z-index: 1;
   }
 
   &__video-section {
+    margin-left: -25px;
     padding-bottom: 75px;
     position: relative;
+    width: 100vw;
 
     &::after {
-      background-color: $greyish;
+      background-color: $silver-tree;
       bottom: 0;
       content: '';
       display: block;
-      height: 80%;
+      // display: none;
+      height: 60%;
       left: 0;
-      margin-left: -25px;
+      // margin-left: -25px;
       pointer-events: none;
       position: absolute;
-      width: 100vw;
+      width: 100%;
       z-index: 0;
     }
   }
 
   &__video {
+    // border-radius: 15px;
     box-shadow: 5px 5px 20px 0 rgba($black, 0.15);
     height: auto;
     position: relative;
@@ -41,20 +50,27 @@
 
   @media screen and (min-width: 768px) {
     &__heading {
-      margin-bottom: 50px;
+      // margin-bottom: 50px;
     }
 
     &__video-section {
-      padding-bottom: 120px;
+      margin-left: 0;
+      padding-bottom: 100px;
+      width: 100%;
 
       &::after {
         margin-left: -50px;
+        width: 100vw;
       }
+    }
+
+    &__video {
+      border-radius: 15px;
     }
   }
 
   @media screen and (min-width: 992px) {
-    padding-top: 150px;
+    padding-top: 120px;
 
     &__video-section {
       &::after {

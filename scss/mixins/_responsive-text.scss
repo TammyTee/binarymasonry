@@ -1,0 +1,21 @@
+@mixin responsive-text($mobile-font-size: 16px, $small-font-size: false, $tablet-font-size: false, $desktop-font-size: false) {
+  font-size: ($mobile-font-size / 16px) + rem;
+
+  @if($small-font-size) {
+    @media screen and (min-width: 560px) {
+      font-size: ($small-font-size / 16px) + rem;
+    }
+  }
+
+  @if($tablet-font-size) {
+    @media screen and (min-width: 768px) {
+      font-size: ($tablet-font-size / 16px) + rem;
+    }
+  }
+
+  @if($desktop-font-size) {
+    @media screen and (min-width: 992px) {
+      font-size: ($desktop-font-size / 16px) + rem;
+    }
+  }
+}
