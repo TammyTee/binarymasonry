@@ -1,7 +1,5 @@
 @mixin button($border: null, $border-radius: 1px, $family: 'base', 
 $font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.9rem, $transform: 'uppercase') {
-  // @include font-face($family: $family, $weight: 'bold');
-  // @include responsive-type($font-size);
   border-radius: #{$border-radius};
   font-size: #{$font-size};
   font-weight: 600;
@@ -15,7 +13,6 @@ $font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.9rem, $tr
   transition: background-color 0.333s ease-in-out;
 }
 
-// change button background color on hover
 @mixin button-hover($background, $text: 'white') {
   &:hover,
   &:focus,
@@ -27,9 +24,6 @@ $font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.9rem, $tr
 
 .button {
   @include button;
-  // @include button-hover($background: color('button', 'primary'));
-  // background-color: color('button', 'primary');
-  // color: color('base', 'white');
   border: 1px solid;
   cursor: pointer;
   display: inline-block;

@@ -2,6 +2,7 @@
   background: darken($greyish, 15%);
   height: 100vh;
   min-height: 700px;
+  min-height: -webkit-fill-available;
   position: relative;
   z-index: 1;
 
@@ -33,8 +34,6 @@
     align-items: center;
     display: flex;
     height: 100%;
-    // padding-bottom: 275px;
-    // padding-top: 200px;
     position: relative;
     z-index: 2;
   }
@@ -50,6 +49,7 @@
     z-index: 3;
 
     &__icon {
+      animation: heartbeat 1.5s ease-in-out infinite both;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -69,9 +69,6 @@
     color: $white;
     margin-top: -100px;
     max-width: 280px;
-    // padding-left: 20px;
-    // padding-right: 20px;
-    // text-align: center;
     width: 100%;
   }
 
@@ -81,37 +78,20 @@
   }
 
   &__heading {
-    // font-family: $font-rubik;
-    // text-transform: uppercase;
-    // color: #073d5e;
-    // font-size: 38px;
-    // letter-spacing: -1.46px;
-    // line-height: 1.15;
+    //
   }
 
   &__tagline {
     font-family: $font-roboto;
-    // font-size: 30px;
     font-weight: 400;
-    // font-style: italic;
-    // font-weight: bold;
     letter-spacing: 0.25px;
-    // line-height: 1.15;
-    margin-top: 10px;
+    margin-top: 25px;
     text-transform: none;
   }
 
   @media screen and (min-width: 560px) {
     &__content {
       max-width: 70%;
-    }
-
-    &__heading {
-      // font-size: 55px;
-    }
-
-    &__tagline {
-      // font-size: 40px;
     }
 
     &__icon {
@@ -130,17 +110,16 @@
   }
 
   @media screen and (min-width: 992px) {
-    &__heading {
-      font-size: 90px;
-    }
-
     &__tagline {
-      // font-size: 55px;
       margin-top: 30px;
     }
 
     &__icon {
       width: 78px;
+    }
+
+    &__scroll {
+      height: 100px;
     }
   }
 

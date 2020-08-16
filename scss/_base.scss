@@ -113,7 +113,7 @@ button {
   }
 
   &--2 {
-    @include responsive-text(30px, 40px, false, 55px);
+    @include responsive-text(28px, 40px, false, 55px);
     font-family: $font-roboto;
   }
 

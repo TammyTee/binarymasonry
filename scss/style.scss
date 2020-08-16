@@ -1,16 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,700&Rubik:400,700&Open+Sans:300,400,600);
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&Rubik:400,700&Open+Sans:300,400,600');
 @import './variables/index';
 @import './mixins/index';
+@import './keyframes';
 @import './base';
 @import './components/index';
-
-.footer {
-  @include responsive-text(12px);
-  background: $dark-blue;
-  min-height: 48px;
-  color: white;
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
-  padding: 15px 0;
-}

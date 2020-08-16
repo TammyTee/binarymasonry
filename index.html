@@ -3,8 +3,10 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="favicon.ico" />
     <title>Flyover Technologies</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -45,7 +47,7 @@
         </div>
 
         <div class="banner-video-highlight__video-section">
-          <video class="banner-video-highlight__video" autoplay muted loop playsinline>
+          <video class="banner-video-highlight__video" autoplay muted loop playsinline data-aos="slide-up">
             <source src="assets/boxes.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
@@ -62,28 +64,36 @@
 
         <div class="use-case">
           <div class="use-case__content">
-            <div class="use-case__image-container"><img class="use-case__image" src="assets/field-cropped.png" alt="field"></div>
+            <div class="use-case__image-container" data-aos="fade-right">
+              <img class="use-case__image" src="assets/field-cropped.png" alt="field">
+            </div>
             <p class="use-case__text heading heading--4">Big Data Processing</p>
           </div>
         </div>
 
         <div class="use-case is-reversed">
           <div class="use-case__content">
-            <div class="use-case__image-container"><img class="use-case__image" src="assets/boundaries-md.png" alt="boundaries"></div>
+            <div class="use-case__image-container" data-aos="fade-left">
+              <img class="use-case__image" src="assets/boundaries-md.png" alt="boundaries">
+            </div>
             <p class="use-case__text heading heading--4">Computer Vision and AI</p>
           </div>
         </div>
 
         <div class="use-case">
           <div class="use-case__content">
-            <div class="use-case__image-container"><img class="use-case__image" src="assets/variance-md.png" alt="variance"></div>
+            <div class="use-case__image-container" data-aos="fade-right">
+              <img class="use-case__image" src="assets/variance-md.png" alt="variance">
+            </div>
             <p class="use-case__text heading heading--4">Crop Analysis</p>
           </div>
         </div>
 
         <div class="use-case is-reversed">
           <div class="use-case__content">
-            <div class="use-case__image-container"><img class="use-case__image" src="assets/solar-md.png" alt="solar"></div>
+            <div class="use-case__image-container" data-aos="fade-left">
+              <img class="use-case__image" src="assets/solar-md.png" alt="solar">
+            </div>
             <p class="use-case__text heading heading--4">Automatic Object Detection</p>
           </div>
         </div>
@@ -98,7 +108,7 @@
           <p class="content__text">Deployed As a Highly-Scalable, Fault-Tolerant Architecture in the Cloud for Handling Infinitely Large Datasets.</p>
         </div>
 
-        <picture>
+        <picture data-aos="fade-up">
           <source srcset="assets/training-dark.svg" media="(min-width: 768px)">
           <img src="assets/training-sm.svg" alt="training"/>
         </picture>
@@ -108,7 +118,6 @@
     <section class="banner-cta">
       <div class="container text-center">
         <div class="content margin-bottom-50">
-          <p class="content__eyebrow eyebrow color-white">Contact Us</p>
           <h3 class="content__heading heading heading--3 color-white">Let's Work Together</h3>
         </div>
         
@@ -142,23 +151,18 @@
           <button class="form__submit button button--white" type="submit">Send Message</button>
         </form>
       </div>
-<!-- 
-      <div id="contact-us" class="section-container">
-        <div class="row">
-          <div class="col vert-center">
-            <h3 class="section-header text-center">
-              <a href="mailto:info@flyovertechnologies.com?subject=Consultation">Let's work together</a>
-            </h3>
-          </div>
-        </div>
-      </div> -->
     </section>
 
     <section class="footer">
-      <!-- <img src="logo.png" alt="logo"/> -->
-      <div class="container">
-        Copyright &copy; 2020 Flyover Technologies, LLC. All rights reserved.
+      <div class="footer__container container">
+        <img class="footer__logo" src="logo.png" alt="Flyover Technologies, LLC"/>
+        <p>Copyright &copy; 2020 Flyover Technologies, LLC. All rights reserved.</p>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 800, easing: 'ease-in-out'});
+    </script>
   </body>
 </html>
