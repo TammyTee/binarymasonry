@@ -1,0 +1,148 @@
+.use-cases {
+  overflow: hidden;
+  padding-bottom: 100px;
+  padding-top: 60px;
+  position: relative;
+
+  &::before {
+    background-color: $greyish;
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__heading {
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+    padding-top: 100px;
+  }
+}
+
+.use-case {  
+  padding-top: 50px;
+  position: relative;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__image-container {
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px 0 rgba($black, 0.2);
+    height: 280px;
+    overflow: hidden;
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__text {
+    color: $dark-blue;
+    font-weight: 600;
+    display: inline-flex;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      background: url('/assets/leaf.png') no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 15px;
+      left: 0;
+      margin-left: -18px;
+      margin-top: 3px;
+      position: absolute;
+      top: 0;
+      width: 15px;
+    }
+  }
+
+  @media screen and (min-width: 560px) {
+    padding-top: 60px;
+
+    &__image-container {
+      height: 350px;
+    }
+  
+    &__text {
+      margin-top: 40px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__content {
+      align-items: center;
+      display: flex;
+
+      .is-reversed & {
+        flex-flow: row-reverse;
+      }
+    }
+  
+    &__image-container {
+      flex: 0 0 auto;
+      width: 55%;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-left: 60px;
+      padding-left: 5px;
+      text-align: left;
+
+      &::before {
+        height: 20px;
+        width: 20px;
+      }
+
+      .is-reversed & {
+        margin-left: 0;
+        margin-right: 60px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 75px;
+
+    & + .use-case {
+      margin-top: -120px;
+    }
+
+    &__image-container {
+      height: 400px;
+      width: 45%;
+    }
+
+    &__text {
+      margin-left: 125px;
+      padding-left: 10px;
+
+      &::before {
+        height: 25px;
+        width: 25px;
+      }
+
+      .is-reversed & {
+        margin-right: 125px;;
+      }
+    }
+  }
+}

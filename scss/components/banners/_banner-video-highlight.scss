@@ -1,0 +1,77 @@
+.banner-video-highlight {
+  padding-top: 100px;
+  position: relative;
+
+  &__heading {
+    //
+  }
+
+  &__container {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+
+  &__video-section {
+    margin-left: -25px;
+    padding-bottom: 75px;
+    position: relative;
+    width: 100vw;
+
+    &::after {
+      background-color: $silver-tree;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 60%;
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+
+  &__video {
+    box-shadow: 5px 5px 20px 0 rgba($black, 0.15);
+    height: auto;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__video-section {
+      margin-left: 0;
+      padding-bottom: 100px;
+      width: 100%;
+
+      &::after {
+        margin-left: -50px;
+        width: 100vw;
+      }
+    }
+
+    &__video {
+      border-radius: 15px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-top: 120px;
+
+    &__video-section {
+      &::after {
+        margin-left: -75px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__video-section {
+      &::after {
+        margin-left: calc((75px + ((100vw - 1440px) / 2)) * -1);
+      }
+    }
+  }
+}

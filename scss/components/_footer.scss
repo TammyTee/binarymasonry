@@ -1,0 +1,31 @@
+.footer {
+  @include responsive-text(12px);
+  background: $dark-blue;
+  min-height: 48px;
+  color: white;
+  padding: 20px 0;
+
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  &__logo {
+    margin: 0 auto 15px;
+    max-width: 275px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__container {
+      align-items: center;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      margin: 0;
+    }
+  }
+}

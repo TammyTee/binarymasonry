@@ -1,0 +1,10 @@
+.banner-cta {
+  background-color: $blue-zodiac;
+  padding-bottom: 75px;
+  padding-top: 50px;
+
+  @media screen and (min-width: 992px) {
+    padding-bottom: 110px;
+    padding-top: 100px;
+  }
+}

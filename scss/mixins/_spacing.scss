@@ -1,0 +1,43 @@
+@mixin spacing($space-type) {
+  @for $i from 0 through ceil(50 / 5) {
+    $value: $i * 5;
+
+    .#{$space-type}-#{$value} {
+      #{$space-type}: #{$value}px;
+    }
+
+    .#{$space-type}-vertical-#{$value} {
+      #{$space-type}-bottom: #{$value}px;
+      #{$space-type}-top: #{$value}px;
+    }
+
+    .#{$space-type}-horizontal-#{$value} {
+      #{$space-type}-left: #{$value}px;
+      #{$space-type}-right: #{$value}px;
+    }
+
+    .#{$space-type}-bottom-#{$value} {
+      #{$space-type}-bottom: #{$value}px;
+    }
+
+    .#{$space-type}-top-#{$value} {
+      #{$space-type}-top: #{$value}px;
+    }
+
+    .#{$space-type}-left-#{$value} {
+      #{$space-type}-left: #{$value}px;
+    }
+
+    .#{$space-type}-right-#{$value} {
+      #{$space-type}-right: #{$value}px;
+    }
+  }
+}
+
+@mixin spacing-padding() {
+  @include spacing(padding);
+}
+
+@mixin spacing-margin() {
+  @include spacing(margin);
+}
