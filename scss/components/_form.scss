@@ -19,7 +19,9 @@
 
   &:focus {
     // background-color: rgba($background, 1);
-    border-color: $dark-blue;
+    // border-color: $dark-blue;
+    border: 1px solid rgba($silver-tree, 0.8);
+    background-color: rgba($silver-tree, 0.05);
     outline: 0px dashed currentColor;
   }
 }
