@@ -86,6 +86,7 @@ body {
   background-color: #fcfcfc;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 768px) {
   body {
