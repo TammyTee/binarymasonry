@@ -1,37 +1,22 @@
-@mixin button($border: null, $border-radius: 1px, $family: 'base', 
-$font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.8rem, $transform: 'uppercase') {
-  border-radius: #{$border-radius};
-  font-size: #{$font-size};
-  font-weight: 600;
-  letter-spacing: #{$letter-spacing};
-  line-height: #{$line-height};
-  padding-bottom: #{$spacing * 1.25};
-  padding-left: #{$spacing};
-  padding-right: #{$spacing};
-  padding-top: #{$spacing * 1.25};
-  text-transform: #{$transform};
-  transition: background-color 0.333s ease-in-out;
-}
-
-@mixin button-hover($background, $text: 'white') {
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: darken($background, 6%);
-    color: $text;
-  }
-}
-
 .button {
-  @include button;
   background-color: transparent;
+  border-radius: 1px;
   border: 1px solid;
   cursor: pointer;
   display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  line-height: 1;
   min-width: 100px;
+  padding-bottom: calc(0.8rem * 1.25);
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: calc(0.8rem * 1.25);
   position: relative;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: 0.333s ease-in-out;
   vertical-align: middle;
 
@@ -43,7 +28,6 @@ $font-size: 12px, $letter-spacing: 0.6px, $line-height: 1, $spacing: 0.8rem, $tr
     &:hover {
       background-color: rgba($white, 0.4);
       border-color: rgba($white, 0);
-      // color: $dark-blue;
     }
   }
 }
