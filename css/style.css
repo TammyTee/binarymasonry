@@ -1212,25 +1212,24 @@ button {
 }
 
 .button {
+  background-color: transparent;
   border-radius: 1px;
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.6px;
   line-height: 1;
-  padding-bottom: 1rem;
+  min-width: 100px;
+  padding-bottom: calc(0.8rem * 1.25);
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  padding-top: 1rem;
-  text-transform: uppercase;
-  transition: background-color 0.333s ease-in-out;
-  background-color: transparent;
-  border: 1px solid;
-  cursor: pointer;
-  display: inline-block;
-  min-width: 100px;
+  padding-top: calc(0.8rem * 1.25);
   position: relative;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: 0.333s ease-in-out;
   vertical-align: middle;
 }
